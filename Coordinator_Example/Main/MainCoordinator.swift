@@ -9,6 +9,7 @@ import UIKit
 
 protocol MainCoordinatorDelegate {
     func didLoggedOut(_ coordinator: MainCoordinator)
+    func didMypage(_ coordinator: MainCoordinator)
 }
 
 class MainCoordinator: Coordinator, MainViewControllerDelegate {
@@ -31,5 +32,9 @@ class MainCoordinator: Coordinator, MainViewControllerDelegate {
     
     func logout() {
         self.delegate?.didLoggedOut(self)
+    }
+    
+    func mypage() {
+        self.delegate?.didMypage(self)
     }
 }

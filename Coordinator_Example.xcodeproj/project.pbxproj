@@ -17,6 +17,8 @@
 		5BA4CD21292F4BA40059DD72 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA4CD20292F4BA40059DD72 /* LoginCoordinator.swift */; };
 		5BA4CD23292F513C0059DD72 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA4CD22292F513C0059DD72 /* MainCoordinator.swift */; };
 		5BA4CD25292F52A40059DD72 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA4CD24292F52A40059DD72 /* MainViewController.swift */; };
+		5BA4CD2B293049A50059DD72 /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA4CD2A293049A50059DD72 /* MypageViewController.swift */; };
+		5BA4CD2D29304CF20059DD72 /* MypageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA4CD2C29304CF20059DD72 /* MypageCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		5BA4CD20292F4BA40059DD72 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		5BA4CD22292F513C0059DD72 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		5BA4CD24292F52A40059DD72 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5BA4CD2A293049A50059DD72 /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
+		5BA4CD2C29304CF20059DD72 /* MypageCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 		5BA4CD05292F483C0059DD72 /* Coordinator_Example */ = {
 			isa = PBXGroup;
 			children = (
+				5BA4CD29293049390059DD72 /* Mypage */,
 				5BA4CD28292F54BF0059DD72 /* Main */,
 				5BA4CD27292F54A80059DD72 /* Login */,
 				5BA4CD26292F54A00059DD72 /* App */,
@@ -101,6 +106,15 @@
 				5BA4CD24292F52A40059DD72 /* MainViewController.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		5BA4CD29293049390059DD72 /* Mypage */ = {
+			isa = PBXGroup;
+			children = (
+				5BA4CD2C29304CF20059DD72 /* MypageCoordinator.swift */,
+				5BA4CD2A293049A50059DD72 /* MypageViewController.swift */,
+			);
+			path = Mypage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +195,8 @@
 				5BA4CD07292F483C0059DD72 /* AppDelegate.swift in Sources */,
 				5BA4CD09292F483C0059DD72 /* SceneDelegate.swift in Sources */,
 				5BA4CD25292F52A40059DD72 /* MainViewController.swift in Sources */,
+				5BA4CD2B293049A50059DD72 /* MypageViewController.swift in Sources */,
+				5BA4CD2D29304CF20059DD72 /* MypageCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

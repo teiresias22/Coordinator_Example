@@ -43,6 +43,13 @@ class AppCoordinator: Coordinator {
         coordinator.start()
         self.childCoordinators.append(coordinator)
     }
+    
+    private func showMypageViewController() {
+        let coordinator = MypageCoordinator(navigationController: self.navigationController)
+        coordinator.delegate = self
+        coordinator.start()
+        self.childCoordinators.append(coordinator)
+    }
 }
 
 extension AppCoordinator: LoginCoordinatorDelegate {
@@ -53,8 +60,20 @@ extension AppCoordinator: LoginCoordinatorDelegate {
 }
 
 extension AppCoordinator: MainCoordinatorDelegate {
+    func didMypage(_ coordinator: MainCoordinator) {
+        self.childCoordinators = self.childCoordinators.filter { $0 !== coordinator }
+        self.showMypageViewController()
+    }
+    
     func didLoggedOut(_ coordinator: MainCoordinator) {
         self.childCoordinators = self.childCoordinators.filter { $0 !== coordinator }
         self.showLoginViewController()
+    }
+}
+
+extension AppCoordinator: MypageCoorinatorDelegate {
+    func didMain(_ coordinator: MypageCoordinator) {
+        self.childCoordinators = self.childCoordinators.filter { $0 !== coordinator }
+        self.showMainViewController()
     }
 }
